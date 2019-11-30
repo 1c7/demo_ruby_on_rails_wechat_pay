@@ -1,0 +1,16 @@
+<!-- 引入一个可以做二维码的 js 库 -->
+<!-- https://github.com/davidshimjs/qrcodejs -->
+<script src='/js/qrcode.min.js'></script>
+
+<!-- 输出微信的返回作为参考 -->
+<p><%#= @result %></p>
+
+<!-- 显示二维码 -->
+<% if @result['xml']['code_url'] %>
+  <div id="qrcode"></div>
+  <script type="text/javascript">
+    new QRCode(document.getElementById("qrcode"), "<%= @result['xml']['code_url'] %>");
+  </script>
+<% end %>
+
+<a href="/">返回首页</a>

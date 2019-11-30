@@ -1,0 +1,25 @@
+<div class='container'>
+  <div>总订单数 <%= @orders.count %></div>
+
+  <div><a href="./home/unifiedorder">新建订单</a></div>
+
+
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">订单号</th>
+        <th scope="col">状态</th>
+        <th scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @orders.each do |order|%>
+      <tr>
+        <td><%= order.id %></td>
+        <td> <%= order_status(order.status) %></td>
+        <td> <a href="/order/<%= order.id %>"><button type="button" class="btn btn-outline-light">去支付</button></a> </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

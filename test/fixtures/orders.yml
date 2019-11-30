@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id           :bigint           not null, primary key
+#  code_url     :string
+#  product_name :string
+#  status       :integer          default("unpaid"), not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  product_name: MyString
+
+two:
+  status: 1
+  product_name: MyString

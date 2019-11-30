@@ -1,0 +1,11 @@
+<script src='/js/qrcode.min.js'></script>
+
+<!-- 显示二维码 -->
+
+<div id="qrcode"></div>
+<script type="text/javascript">
+  new QRCode(document.getElementById("qrcode"), "<%= @order.code_url %>");
+</script>
+
+
+<a href="/">返回首页</a>
