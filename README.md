@@ -1,5 +1,5 @@
 ## Ruby on Rails 微信支付 Demo
-代码需搭配文章使用: [文章地址待填]
+代码需搭配文章使用: https://1c7.me/rails-wechat-pay-tutorial/
 
 ### 演示包含
 * 网页端 (或者说 PC 端) 扫二维码支付 (微信的术语叫 NATIVE 支付)
